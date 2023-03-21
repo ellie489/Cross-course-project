@@ -29,7 +29,7 @@ a {
   }  
   
 a:hover {
-  box-shadow: 10px 10px 15px  #000;
+  text-decoration: underline;
   }
 
 h1 {
@@ -279,4 +279,9 @@ h1,h2,h3 {
      justify-content: center;
      padding: 20px;
     }
+
+    .product-details *{
+      max-width: 100%;
+    }
+
 }
