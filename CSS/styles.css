@@ -20,9 +20,10 @@ header {
 footer {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding-top: 300px;
+    margin-bottom: 4rem;
   }
-footer > * {
+footer a {
     padding: 20px;
   }
 
@@ -146,6 +147,7 @@ h1,h2,h3 {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 2rem;
   }
 
   .contact button {
@@ -227,12 +229,11 @@ h1,h2,h3 {
     max-width: 400px;
     padding-left: 30px ;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
+
   form {
     max-width: 300px;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
   }
 
 
@@ -332,7 +333,7 @@ h1,h2,h3 {
           background: #091B2C;
           color: aliceblue;
           list-style: none;
-          padding-top: 300px;
+          padding-top: 3rem;
         }    
     
         .showMenu {
@@ -343,6 +344,7 @@ h1,h2,h3 {
     nav {
       text-align: center;
     }    
+    
     nav a {
     display: inline-block;
     background-color:  #92A9BF;
