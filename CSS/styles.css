@@ -23,7 +23,8 @@ footer {
     padding-top: 300px;
     margin-bottom: 4rem;
   }
-footer a {
+
+footer a, .active {
     padding: 20px;
   }
 
@@ -93,7 +94,7 @@ h1,h2,h3 {
   }
 
   .active {
-    font-weight: bold;
+    font-weight: 600;
   }
 
   img {
