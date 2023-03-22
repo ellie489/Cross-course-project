@@ -1,6 +1,7 @@
-const form = document.querySelector(".contact-form");
+const form = document.querySelector(".form-container");
 const email = document.querySelector(".email-input");
 const message = document.querySelector(".message-input");
+const formField = document.querySelector(".contact-form");
 
 
 
@@ -15,36 +16,35 @@ function validateEmail(email) {
 
 const displayError = (input, error) => {
 
-    input.classList.add("form-error");
-    input.innerText = error;
+    input.nextElementSibling.classList.add("form-error");
+    input.nextElementSibling.innerText = error;
 }
 
 const removeError = (input) => {
 
-    input.innerText = "";
-    input.classList.remove("form-error");
+    input.nextElementSibling.innerText = "";
+    input.nextElementSibling.classList.remove("form-error");
 
 }
-
 
 const validateInputs = () => {
 
     const emailValue = email.value.trim()
     const messageValue = message.value.trim()
-    const success = document.querySelector("#form-h1");
+    const success = document.querySelector("#form-message");
 
 
 
         if (!validateEmail(emailValue)) {
 
-            displayError(email, "Your Email address is incorrect");
+            displayError(email, "* Please provide your email so we can get back to you");
         }
         else {
             removeError(email)
         }
 
-        if (messageValue.length < 10) {
-            displayError(subject, "Please give us more information(Minimum 10 characters)");
+        if (messageValue.length <10) {
+            displayError(subject, "* Please tell us what we can help you with (minimum 10 characters)");
         }
         else {
             removeError(subject);
@@ -54,7 +54,11 @@ const validateInputs = () => {
         // Success validation
 
         if (validateEmail(emailValue) && messageValue.length >= 10) {
-            success.innerHTML = "Thank you! We have received your message and will get back to you as soon as possible.(Usually within 24 hours)";
+            success.innerHTML = `<div class="success">Thank you! We have received your message and will get back to you as soon as possible (Usually within 24 hours)
+            
+            <a href="list-of-videos.html"><h3 class="cta-button">Browse Movies</h3></a></div>`;
+            success.style.color="lightgreen";
+            formField.style["display"] = "none";
         }
         else {
             success.innerHTML = "";

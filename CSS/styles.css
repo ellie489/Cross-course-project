@@ -2,7 +2,10 @@ body{
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;  
   background-color: #091B2C;
   color: aliceblue;
+  padding: 0px;
+  margin: 0px;
 }
+
 header {
   display: flex;
   flex-direction: column;
@@ -28,10 +31,6 @@ a {
     color: aliceblue;
   }  
   
-a:hover {
-  text-decoration: underline;
-  }
-
 h1 {
     text-align: center;
 }
@@ -47,7 +46,7 @@ h1,h2,h3 {
   width: 6em;
   padding: 10px;
   font-size: 1.3em;
-  margin-left: 20px;
+  margin: 20px;
 }
   .slider {
     width: 100%;
@@ -60,16 +59,21 @@ h1,h2,h3 {
     scroll-behavior: smooth;
     top: 300px;
     text-align: center;
+
   }
+
   .slide {
-    width: 90%;
+    width: 100%;
     flex-shrink: 0;
     height: 100%;
     scroll-snap-align: start;
-    padding-left: 20px;
-    text-align: left;
+    padding: 10px;
+    margin-bottom: 100px;
   }
 
+  .slide p {
+    text-align: left;
+  }
 
   .small-slider {
       width: 100%;
@@ -80,6 +84,7 @@ h1,h2,h3 {
       -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
       font-size: 0.9em;
+      margin-top: 20px;
       
   }
   .small-slider img {
@@ -93,25 +98,46 @@ h1,h2,h3 {
   img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 12px;
   }
+
+/* HOVER STATE */
+
+  nav a:hover, footer a:hover {
+    text-decoration: underline;
+  }
+
+  .slide:hover,  .all-movies *:hover {
+    background-color: #000000;
+    border-radius: 12px;
+    transition: 0.3s;
+    text-decoration: underline;
+  }
+  
+  .cta-button:hover, .display-text:hover {
+    background-color: aliceblue;
+    color: #091B2C;
+  }
+
+
+
   /* Contact Page */ 
+
+
   input,textarea {
-    margin: 10px 10px 10px 0px;
     border-radius: 8px;
     padding: 12px;
     max-width: 1000px;
+    margin-top: 10px;
   }
-  .contact-form {
+
+  .form-container {
     display:flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 500px;
     padding: 20px;
   }
-  .contact-text {
-    padding: 10px;
-    line-height: 15px;
-    font-size: 0.9em;
-  }
+ 
   .contact-text h1{
     text-align: left;
   }
@@ -119,9 +145,25 @@ h1,h2,h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .contact button {
+    margin-top: 20px;
+  }
+  .form-field {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .success {
+    padding: 20px;
+    max-width: 400px ;
   }
 
   /* About page */
+
+
   .about {
     background-color: #92A9BF;
     color: #000;
@@ -151,10 +193,12 @@ h1,h2,h3 {
     background-color: #92A9BF;
     color: #000;
     padding: 10px;
+  }
+
 
   /* List of videos page */
 
-  }
+  
   .all-movies {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,7 +208,11 @@ h1,h2,h3 {
     text-transform: capitalize;
     max-width: 90%;
     margin: auto;
-    font-size: 1.3em;
+    font-size: 1.2em;
+  }
+
+  .all-movies div {
+    padding: 10px;
   }
 
 /* Checkout page */
@@ -186,6 +234,8 @@ h1,h2,h3 {
   form {
     max-width: 300px;
   }
+
+
  /* Checkout Success page */
   .success {
     display: flex;
@@ -194,12 +244,26 @@ h1,h2,h3 {
     text-align: center;
   }
 
+/* JS */
+
+.form-error {
+  color: rgb(218, 95, 95);
+}
+
   @media only screen and (min-width: 601px) 
+  
+
   {
-    .hamburger-menu nav {
-      display: inline-block;
-      margin-bottom: 50px;
+
+    .hamburger {
+      display: none;
     }
+
+    nav ul{
+      display: flex;
+      list-style: none;
+    }
+
     nav a {
       padding: 20px;
       font-size: 1.2em;
@@ -237,38 +301,59 @@ h1,h2,h3 {
   @media only screen and (max-width: 600px)
 
   { 
-    nav, #menu-checkbox{
-    display: none;
-    }
 
+        /* HAMBURGER MENU */
+
+        .hamburger {
+          position: fixed;
+          z-index: 100;
+          top: 1rem;
+          left: 1rem;
+         padding: 20px;
+         border-radius: 10px;
+         border: 0px;
+         background: #091B2C;
+         color: aliceblue;
+          }
+    
+        .closeIcon {
+          display: none;
+        }
+    
+        .menu {
+          position: fixed;
+          transform: translatex(-100%);
+          transition: transform 0.2s;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 99;
+          background: #091B2C;
+          color: aliceblue;
+          list-style: none;
+          padding-top: 300px;
+        }    
+    
+        .showMenu {
+         transform: translatex(0);
+        }   
+    
+
+    nav {
+      text-align: center;
+    }    
     nav a {
     display: inline-block;
-    background-color: #798B9C;
-    color: aliceblue;
-    border: solid 3px #000;
+    background-color:  #92A9BF;
+    color: #091B2C;
     border-radius: 10px;
     width: 100%;
     padding: 15px;
     margin-top: 20px;
-
-    }
-    #line-one, #line-two, #line-three {
-    font-weight: bold;
-    }
-
-    #menu-checkbox:checked ~ nav {
-    display:inline-block;
-    position: absolute;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    }
-    .hamburger-menu {
-    display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 10px 10px 10px 220px;
-    position: absolute;
-    top: 200px;
-    left: 20px;
+    font-size: 1.2rem;
+    max-width: 80%;
+    border: 1px solid black;
     }
 
     .checkout {
