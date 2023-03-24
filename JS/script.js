@@ -3,6 +3,9 @@ const navLink = document.querySelectorAll(".nav-link");
 const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
+const movieDetails = document.querySelector(".movie-details");
+const movieCover = document.querySelector(".movie-cover");
+let active = true;
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -18,11 +21,24 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-const navLinks = document.querySelectorAll(".nav-link");
 
-navLinks.forEach( 
+navLink.forEach( 
     function(navLink) { 
       navLink.addEventListener("click", toggleMenu);
     }
   )
-  
+
+
+let toggleDetails = function() {
+    if(active){
+        movieDetails.style.display = "block";
+        movieCover.style.display = "none";
+        active = false;
+    }
+    else{
+        movieDetails.style.display = "none";
+        movieCover.style.display = "block";
+        active = true;
+    }
+}
+

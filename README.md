@@ -34,3 +34,6 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 
 To make the dotted carousel slider:
 https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+Toggle product details inspired from:
+https://www.youtube.com/watch?v=jBIoUWLghnY
