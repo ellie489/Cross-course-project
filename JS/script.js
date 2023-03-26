@@ -7,6 +7,7 @@ const movieDetails = document.querySelector(".movie-details");
 const movieCover = document.querySelector(".movie-cover");
 let active = true;
 
+
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
@@ -41,4 +42,3 @@ let toggleDetails = function() {
         active = true;
     }
 }
-
