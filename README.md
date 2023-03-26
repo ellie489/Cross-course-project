@@ -32,8 +32,5 @@ https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/
 To make the hamburger menu I got from:  
 https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 
-To make the dotted carousel slider:
-https://www.w3schools.com/howto/howto_js_slideshow.asp
-
 Toggle product details inspired from:
 https://www.youtube.com/watch?v=jBIoUWLghnY

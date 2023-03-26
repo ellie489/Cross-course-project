@@ -295,7 +295,9 @@ h1,h2,h3 {
 
     .slide {
       flex-shrink: 1;
+      padding: 10px 30px;
     }
+
     #slide-2, #slide-3, #slide-4, #line-one, #line-two, #line-three, #menu-checkbox {
       display: none;
     }
@@ -321,6 +323,9 @@ h1,h2,h3 {
       display: flex;
     }
   }
+
+
+  /* MOBILE SCREEN */ 
 
   @media only screen and (max-width: 600px)
 
@@ -422,6 +427,7 @@ h1,h2,h3 {
 
     .video {
       max-width: 100%;
+      margin-bottom: 2rem;
     }
   
   }
