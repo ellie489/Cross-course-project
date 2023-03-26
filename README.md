@@ -16,7 +16,7 @@ to stay true to the prototype. This was also recommended by my teachers for lear
 ## The website
 
 I deployed my website from Netlify with the following link:
-https://quiet-axolotl-3f47f2.netlify.app
+https://cheery-lolly-5de8d4.netlify.app/
 
 ## The prototype
 
