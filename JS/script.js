@@ -33,7 +33,7 @@ navLink.forEach(
 let toggleDetails = function() {
     if(active){
         movieDetails.style.display = "block";
-        movieCover.style.display = "none";
+        // movieCover.style.display = "none";
         active = false;
     }
     else{
