@@ -18,10 +18,15 @@ async function getFeaturedMovies() {
 async function renderMovies() {
 
     const movies = await getMovies();
+
+    createMoviesHTML(movies);
+
+}
+async function renderFeaturedMovies() {
+
     const featuredMovies = await getFeaturedMovies();
 
     createFeaturedMoviesHTML(featuredMovies);
-    createMoviesHTML(movies);
 
 }
 
@@ -104,6 +109,7 @@ export {
     getFeaturedMovies,
     getMovies,
     renderMovies,
+    renderFeaturedMovies,
     createFeaturedMovieHTML,
     createMovieHTML
 }

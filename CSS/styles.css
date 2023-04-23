@@ -130,7 +130,7 @@ h1,h2,h3 {
     background-color: #000000;
     border: 10px solid black;
     border-radius: 12px;
-    transition: 0.5s;
+    transition: 0.3s;
     text-decoration: underline;
   }
   .container:hover * {
