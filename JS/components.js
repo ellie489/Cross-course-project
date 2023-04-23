@@ -1,4 +1,4 @@
-const wordpressAPI = 'http://wordpress.squareeyes-project.no/wp-json/wc/store/';
+const wordpressAPI = 'https://wordpress.squareeyes-project.no/wp-json/wc/store/';
 const productsURL = 'products/';
 const featuredURL = '?&featured=true';
 let loader = document.querySelector('.loader');
