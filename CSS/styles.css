@@ -126,12 +126,21 @@ h1,h2,h3 {
     text-decoration: underline;
   }
 
-  .slide:hover,  .all-movies *:hover {
+  .slide:hover,  .all-movies *:hover,  .container *:hover, .featured-container *:hover  {
     background-color: #000000;
+    border: 10px solid black;
     border-radius: 12px;
-    transition: 0.3s;
+    transition: 0.5s;
     text-decoration: underline;
   }
+  .container:hover * {
+    width: 100%;
+  }
+
+  .container img:hover {
+    border: 0px;
+  }
+
   
   .cta-button:hover, .display-text:hover {
     background-color: aliceblue;
@@ -237,11 +246,15 @@ h1,h2,h3 {
   }
 
 /* Checkout page */
+.card {
+  max-width: 500px;
 
+}
   .checkout {
-    display:flex;
-    max-width: 100%;
+    width: 100%;
     justify-content: center;
+    display: grid;
+    grid-row: 3fr 1fr 1fr ;
   }
 
   .cover {
@@ -290,6 +303,7 @@ h1,h2,h3 {
 }
 
 
+
 /* JS */
 
 .form-error {
@@ -304,7 +318,11 @@ h1,h2,h3 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border: 2px solid aliceblue ;
+  border-radius: 12px;
+  padding: 30px;
 }
+
 
 .featured-container img {
   max-height: 600px;
@@ -313,11 +331,12 @@ h1,h2,h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 1000px;
-  gap: 50px;
+  gap: 3em;
   margin: auto;
   justify-content: center;
   align-items: center;
 }
+
 
 
   @media only screen and (min-width: 601px) 

@@ -1,7 +1,7 @@
 const wordpressAPI = 'http://squareeyes-projectcom.local/wp-json/wc/store/';
 const productsURL = 'products/';
 const featuredURL = '?&featured=true';
-const spinner = document.querySelector('.container');
+let loader = document.querySelector('.loader');
 
 async function getMovies() {
     const response = await fetch(wordpressAPI + productsURL);
@@ -41,13 +41,13 @@ function createFeaturedMoviesHTML(featuredMovies) {
     }
 
 }
-function loader() {
-    spinner.innerHTML = `<div class="loader"></div>`;
+function removeLoader(movie) {
+    loader.classList.remove("loader");
 }
-loader()
+
 
 function createMovieHTML(movie) {
-    spinner.classList.remove("loader");
+    loader.classList.remove("loader");
     const container = document.querySelector('.container');
     const movieContainer = document.createElement('a');
     movieContainer.id = movie.id;
@@ -99,6 +99,8 @@ export {
     wordpressAPI,
     productsURL,
     featuredURL,
+    loader,
+    removeLoader,
     getFeaturedMovies,
     getMovies,
     renderMovies,
