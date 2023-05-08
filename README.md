@@ -24,6 +24,11 @@ Figma Desktop: https://www.figma.com/proto/szt75yeR55RgSX1oLmImGR/2022-09-25_Des
 
 Figma Mobile: https://www.figma.com/proto/szt75yeR55RgSX1oLmImGR/2022-09-25_Design1_CA_Elisabeth-Hope?page-id=1%3A2&node-id=54%3A738&viewport=62%2C329%2C0.12&scaling=scale-down&starting-point-node-id=8%3A1184
 
+## Branches
+I´ve made a new branch for my CMS assignment which was to make API calls to my headless Wordpress page. 
+Deployed on Netlify: https://rainbow-cheesecake-4d8cb5.netlify.app/
+ 
+
 ## Authors
 
 To make the sliders I got the idea from:
