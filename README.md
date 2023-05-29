@@ -75,8 +75,7 @@ This is where you can add any acknowledgements if you'd like, such as to people 
 
 ## The website
 
-I deployed my website from Netlify with the following link
- https://cheery-lolly-5de8d4.netlify.app/
+I deployed my website from [Netlify](https://rainbow-cheesecake-4d8cb5.netlify.app/product.details.html?id=24)
 
 ## The prototype
 
