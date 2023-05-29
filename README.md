@@ -6,7 +6,7 @@ This is my cross-course project from my first year at Noroff Front End Developme
 
 ## Description
 
-The assigment is from https://github.com/NoroffFEU/first-year-cross-course-assignment-brief-two <br> <br>
+The assigment is from [Noroff FEU Github](https://github.com/NoroffFEU/first-year-cross-course-assignment-brief-two) <br> <br>
 The task is to make a video streaming website where you can purchase high quality videos online. 
 Target audience are ages 25-40 and film enthusiasts. 
 
