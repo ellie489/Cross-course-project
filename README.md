@@ -79,12 +79,11 @@ I deployed my website from [Netlify](https://rainbow-cheesecake-4d8cb5.netlify.a
 
 ## The prototype
 
-Figma Desktop: https://www.figma.com/proto/szt75yeR55RgSX1oLmImGR/2022-09-25_Design1_CA_Elisabeth-Hope?page-id=1%3A3&node-id=65%3A3272&viewport=260%2C721%2C0.25&scaling=min-zoom&starting-point-node-id=65%3A3272
+[Figma Desktop](https://www.figma.com/proto/szt75yeR55RgSX1oLmImGR/2022-09-25_Design1_CA_Elisabeth-Hope?page-id=1%3A3&node-id=65%3A3272&viewport=260%2C721%2C0.25&scaling=min-zoom&starting-point-node-id=65%3A3272)
 
-Figma Mobile: https://www.figma.com/proto/szt75yeR55RgSX1oLmImGR/2022-09-25_Design1_CA_Elisabeth-Hope?page-id=1%3A2&node-id=54%3A738&viewport=62%2C329%2C0.12&scaling=scale-down&starting-point-node-id=8%3A1184
+[Figma Mobile](https://www.figma.com/proto/szt75yeR55RgSX1oLmImGR/2022-09-25_Design1_CA_Elisabeth-Hope?page-id=1%3A2&node-id=54%3A738&viewport=62%2C329%2C0.12&scaling=scale-down&starting-point-node-id=8%3A1184)
 
 ## Authors
 
-To make the sliders I got the idea from:
-https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/
+To make the sliders I got the idea from [CSS Tricks](https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/)
 
